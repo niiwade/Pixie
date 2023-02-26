@@ -45,7 +45,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
         let mut user_text = String::new();
         stdin().read_line(&mut user_text).expect("Failed to read line");
         println!();
-        let mut sp = Spinner::new(Spinners::Dots12, "\t\t Pixie is thinking....".into());
+        let mut sp = Spinner::new(Spinners::Dots12, "\t\t Pixie is thinking.........".into());
         let oai_request = OAIRequest {
             prompt: format!("{} {}", prompt, user_text),
             max_tokens: 1000,
